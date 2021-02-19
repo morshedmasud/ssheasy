@@ -7,32 +7,32 @@ def cli():
     """ Main CLI Function """
 
 
-@cli.command(help="To see current RSA kay with 'ssh_key current'")
+@cli.command(help="To see current SSH kay with 'ssh_key current'")
 def current():
     return ssheasy.get_current()
 
 
-@cli.command('list', help="To see all RSA kay list with 'ssh_key list'")
+@cli.command('list', help="To see all SSH kay list with 'ssheasy list'")
 def key_list():
     """ All SSH Key """
     return ssheasy.get_list()
 
 
-@cli.command(help="SSH key backup 'ssh_easy backup {backup key name}'")
+@cli.command(help="SSH key backup 'ssheasy backup {backup key name}'")
 @click.argument('name')
 def backup(name):
     """ Backup a Key """
     return ssheasy.backup_key(name)
 
 
-@cli.command(help="Create new RSA key pair with 'ssh_easy new {new name}'")
+@cli.command(help="Create new SSH key pair with 'ssheasy new {new name}'")
 @click.argument('name')
 def new(name):
-    """ Create a New RSA Key """
+    """ Create a New SSH Key """
     return ssheasy.new_key(name)
 
 
-@cli.command(help="To Rename a key pair with 'ssh_easy rename {old key name} {new key name}'")
+@cli.command(help="To Rename a key pair with 'ssheasy rename {old_key_name} {new_key_name}'")
 @click.argument('old_key_name')
 @click.argument('new_key_name')
 def rename(old_key_name, new_key_name):
@@ -40,18 +40,19 @@ def rename(old_key_name, new_key_name):
     return ssheasy.rename_key(old_key_name, new_key_name)
 
 
-@cli.command(help="To delete specific kay with 'ssh_easy delete {name}'")
+@cli.command(help="To delete specific kay with 'ssheasy delete {name}'")
 @click.argument('name')
 def delete(name):
     """ Delete a Key """
     return ssheasy.delete_key(name)
 
 
-@cli.command(help="To switch RSH pair key 'ssh_easy delete {name}'")
+@cli.command(help="To switch RSH pair key 'ssheasy delete {name}'")
 @click.argument('name')
 def switch(name):
     """ Delete a Key """
     return ssheasy.switch_key(name)
+
 
 def start():
     cli(obj={})
