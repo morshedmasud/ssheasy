@@ -1,0 +1,4 @@
+crypto>=1.4.1
+pycryptodome==3.9.7
+twine
+click
