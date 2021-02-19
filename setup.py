@@ -25,6 +25,6 @@ setuptools.setup(
     keywords='ssh,crypto,cryptography,security,privacy,sshwitch,sshmulti',
     include_package_data=True,
     entry_points={
-            'console_scripts': ['ssh_easy = ssh_easy.cli:start']
+            'console_scripts': ['ssheasy = ssh_easy.cli:start']
           }
 )

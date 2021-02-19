@@ -7,7 +7,7 @@ def cli():
     """ Main CLI Function """
 
 
-@cli.command(help="To see current SSH kay with 'ssh_key current'")
+@cli.command(help="To see current SSH kay with 'ssheasy current'")
 def current():
     return ssheasy.get_current()
 
@@ -18,21 +18,21 @@ def key_list():
     return ssheasy.get_list()
 
 
-@cli.command(help="SSH key backup 'ssheasy backup {backup key name}'")
+@cli.command(help="SSH key backup 'ssheasy backup {current_key_name}'")
 @click.argument('name')
 def backup(name):
     """ Backup a Key """
     return ssheasy.backup_key(name)
 
 
-@cli.command(help="Create new SSH key pair with 'ssheasy new {new name}'")
+@cli.command(help="Create new SSH key pair with 'ssheasy new {new_ssh_name}'")
 @click.argument('name')
 def new(name):
     """ Create a New SSH Key """
     return ssheasy.new_key(name)
 
 
-@cli.command(help="To Rename a key pair with 'ssheasy rename {old_key_name} {new_key_name}'")
+@cli.command(help="To Rename a ssh key pair with 'ssheasy rename {old_key} {new_key}'")
 @click.argument('old_key_name')
 @click.argument('new_key_name')
 def rename(old_key_name, new_key_name):

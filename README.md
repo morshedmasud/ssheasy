@@ -59,6 +59,11 @@ Delete the key pair in ~/.ssh/job
 
 If that key was currently active, it will stay that way until you switch it out again
 
+
+### Help?
+    ssheasy
+    or
+    ssheasy --help
   
 ### MIT License
 Copyright (c) 2021 Md. Morshed Alam Masud
