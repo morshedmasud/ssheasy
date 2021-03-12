@@ -4,8 +4,8 @@ with open("README.md") as file:
     read_me_description = file.read()
 
 setuptools.setup(
-    name="test-ssh-easy",
-    version="0.1.5",
+    name="ssheasy",
+    version="1.0.0",
     author="Md Morshed Alam Masud",
     author_email="morshed.dev@gmail.com",
     description="SSHeasy is a python version of ruby gem SSHwitch which through you can manage multiple ssh key in "
