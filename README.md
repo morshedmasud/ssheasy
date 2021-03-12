@@ -1,4 +1,4 @@
-# SSHeasy
+# [SSHeasy](https://pypi.org/project/ssheasy/)
 *For manage multiple ssh account easily.*
 
 ## SSHeasy
@@ -65,7 +65,10 @@ If that key was currently active, it will stay that way until you switch it out 
     ssheasy
     or
     ssheasy --help
-  
+
+### To Do
+-  Windows OS support.
+
 ### MIT License
 Copyright (c) 2021 Md. Morshed Alam Masud
 
