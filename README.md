@@ -7,7 +7,8 @@ which through you can manage multiple ssh key in Unix-like system.
 The purpose of this is to enable using different sets of keys for services such as Github, Heroku, Bitbucket, or any other that requires SSH auth.
 
 ## Install
-    pip install ssheasy
+    pip3 install crypto // If you face any issue while install ssheasy packages 
+    pip3 instlal ssheasy
 
 ## Usage
 ### Backup
