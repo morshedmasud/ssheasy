@@ -8,7 +8,7 @@ The purpose of this is to enable using different sets of keys for services such 
 
 ## Install
     pip3 install crypto // If you face any issue while install ssheasy packages 
-    pip3 instlal ssheasy
+    pip3 install ssheasy
 
 ## Usage
 ### Backup
